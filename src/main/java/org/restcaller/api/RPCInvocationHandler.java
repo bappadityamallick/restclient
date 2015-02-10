@@ -3,10 +3,7 @@ package org.restcaller.api;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
-
-import org.springframework.util.ReflectionUtils;
 
 public abstract class RPCInvocationHandler<RI extends RPCCallInvocation> implements InvocationHandler {
 
