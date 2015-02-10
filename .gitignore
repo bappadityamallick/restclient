@@ -1,0 +1,15 @@
+*.jar
+*.class
+*.classpath
+*.project
+.settings
+target
+build
+.classpath
+.project
+bin
+node_modules
+bower_components
+dist
+*.springBeans
+*.DS_Store
