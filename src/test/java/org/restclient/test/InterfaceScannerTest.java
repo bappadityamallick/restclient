@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.restcaller.test;
+package org.restclient.test;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package org.restcaller.api;
+package org.restclient.api;
 
 public abstract class RPCCallInvocation<I,O> {
 

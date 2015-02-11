@@ -1,4 +1,4 @@
-package org.restcaller.annotation;
+package org.restclient.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

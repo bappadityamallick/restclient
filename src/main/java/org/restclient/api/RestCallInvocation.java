@@ -1,9 +1,5 @@
-package org.restcaller.api;
+package org.restclient.api;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
 
@@ -35,33 +31,5 @@ public class RestCallInvocation<I,O> extends RPCCallInvocation<I, O> {
 
 		default:throw new IllegalStateException("No Handler defined for httpMethod "+httpMethod);
 		}
-	}
-
-	
-	private abstract class RestCallDelegate<I,O>{
-		protected final Map<String, String> headers = new HashMap<>();
-		protected final Class<O> responseType;
-		
-		protected RestCallDelegate(Class<O> responseType, String contentType, String accepts){
-			this.responseType = responseType;
-			this.headers.put(HttpHeaders.CONTENT_TYPE, contentType);
-			this.headers.put(HttpHeaders.ACCEPT, accepts);
-		}
-		
-		protected abstract O invoke(I input, RestTemplate restTemplate, String url);
-	}
-	
-	private class GetCallDelegate<I,O> extends RestCallDelegate<I, O>{
-
-		protected GetCallDelegate(Class<O> responseType,
-				String contentType, String accepts) {
-			super(responseType,contentType, accepts);
-		}
-
-		@Override
-		protected O invoke(I input, RestTemplate restTemplate, String url) {
-			return restTemplate.getForObject(url, responseType, headers);
-		}
-		
 	}
 }

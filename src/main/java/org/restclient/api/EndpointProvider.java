@@ -1,4 +1,4 @@
-package org.restcaller.api;
+package org.restclient.api;
 
 /**
  * Provides the url for endpoint to invoke at runtime.

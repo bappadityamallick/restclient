@@ -1,4 +1,4 @@
-package org.restcaller.annotation;
+package org.restclient.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import org.restcaller.api.EndpointProvider;
+import org.restclient.api.EndpointProvider;
 
 /**
  * Provides information of the bean/class to be used for

@@ -1,4 +1,4 @@
-package org.restcaller.api;
+package org.restclient.api;
 
 import java.lang.reflect.Method;
 import java.util.Map;
