@@ -1,2 +1,2 @@
 # restclient
-Authomagically generate REST clients
+Automagically generate REST clients
